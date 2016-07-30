@@ -9,7 +9,7 @@
 	</head>
 	<body>	
 	</body>
-		<header id="header" class="header"> <!-- header -->
+		<header id="header" class="header contenedor"> <!-- header -->
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="images/invie.png" width="186" height="60" alt="invie logotipo" />
 			</figure>
@@ -27,33 +27,56 @@
 				</ul>
 			</nav>
 		</header><!-- /header -->
-		<section id="portada" class="portada"><!-- /Portada -->
-			<h1 class="titulo"> Guitarras Invisibles </h1><!-- titulo  -->
-			<h3 class="title-a"> se la estrella del rock que siempre quisiste serlo </h3><!-- resumen -->
-			<button> conoce mas... </button><!-- boton -->
+		<section id="portada" class="portada">
+			<div class="contenedor">
+				<h1 class="titulo"> Guitarras Invisibles </h1><!-- titulo  -->
+				<h3 class="title-a"> se la estrella del rock que siempre quisiste serlo </h3>
+				<button> conoce mas... </button>
+			</div>
+
 		</section>
-		<section id="guitarras" class="guitarra"> <!-- guitarras --> 
+		<section id="guitarras" class="guitarras contenedor"> <!-- guitarras --> 
 			<h2> Nuestras Guitarras</h2> <!-- titulo -->
 			<!-- guitarra 1 -->
 			<article class="guitarra">
-				<img src="images/invie-acustica.png" alt="" width="200">
-				<h3 class="title-b">Invie Acustica</h3>
-				<ol>
-					<li>Estilo Vintage</li>
-					<li>Madera Pura</li>
-					<li>Inclye estuche invisible de alumninio</li>
-				</ol>
+				<img class="derecha" src="images/invie-acustica.png" alt="" width="350">
+				<dir class="contendor-guitarra-a">
+					<h3 class="title-b">Invie Acustica</h3>
+					<ol>
+						<li>Estilo Vintage</li>
+						<li>Madera Pura</li>
+						<li>Inclye estuche invisible de alumninio</li>
+					</ol>
+				</dir>
+				
 			</article>
 			<!-- guitarra 2 -->
 			<article class="guitarra">
-				<img src="images/invie-classic.png" alt="guitarra invie clasica" width="200">
-				<h3 class="title-b">Invie Classic</h3>
-				<ol>
-					<li>Estilo Vintage</li>
-					<li>Liviana</li>
-					<li>Inicia tu camino como RockStar</li>
-				</ol>
+				<img class="izquierda" src="images/invie-classic.png" alt="" width="350">
+				<div class="contenedor-guitarra-b">
+					<h3 class="title-b">Invie Classic</h3>
+					<ol>
+						<li>Estilo Vintage</li>
+						<li>Liviana</li>
+						<li>Inicia tu camino como RockStar</li>
+					</ol>
+				</div>
+				
 			</article>
 		</section>
+		<footer class="footer">
+			<div class="contenedor">
+				<div class="contacto">
+					<img src="images/invie-white.png" alt="logotipo blanco" />
+					<a href="tel:+51993048504"><strong>Telefono:</strong><span> +51 993048504</span>
+					<a href="mailto:contacto@invie.com"> <strong>E-mail</strong> <span>contacto</span></a>
+					</a>
+				</div>
+				<form class="formulario">
+					<label for="nombre"> Nombre: </label>
+					<input type="text" name="" required id="nombre" />
+				</form>
+			</div>
+		</footer>
 	</body>
 </html>
