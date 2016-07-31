@@ -9,12 +9,57 @@ body{
 	font-family: 'Allerta', sans-serif;
 	margin: 0;
 }
+input:focus, textarea:focus{
+	background: lightgray;
+} 
+ table{
+ 	width: 100%;
+ 	margin-top: 30px;
+ 	margin-bottom: 50px;
+ }
+
+ th{
+ 	background: #273b47;
+ 	color: white;
+ 	padding: 10px 20px;
+ 	text-align: left;
+ }
+ td{
+ 	padding: 20px;
+ }
+
+ table, td, th{
+ 	border: 1px solid #273b47;
+ 	border-collapse: collapse;
+ }
+
+.backgroung{
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+.contenedor{
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
 .button{
-	border-radius: 8px;
+	border-radius: 12px;
 	border : none;
-	background: #fd324e;
 	color: white;
-	padding: 7px;
+	text-decoration: none;
+	padding: 7px 18px;
+	font-size: 18px;
+	cursor: pointer;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	background: #fd324e;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+	/*background: #f85032; 
+	background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); 
+	background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); 
+	background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 );*/
+
 }
 .titulo{
 	font-size: 70px;
@@ -22,6 +67,10 @@ body{
 	margin-bottom: 0;
 	margin-top: 70px;
 }
+.titulo span{
+	text-decoration: underline;
+}
+
 .title-a{
 	font-size: 24px;
 	margin-top:0;
@@ -32,6 +81,7 @@ body{
 }
 .guitarras{
 	color: #1F313C;
+	margin-bottom: 60px;
 
 }
 
@@ -41,9 +91,9 @@ body{
 }
 
 .portada{
-	background-image: url('../images/background.png');
 	color: white;
 	padding: 20px;
+	height: 500px;
 }
 
 .portada button{
@@ -56,22 +106,28 @@ body{
 	position: absolute;
 	right: 0;
 }
+.menu a{
+	color: white;
+	text-decoration: none;
+}
 
 .menu li{
 	display: inline-block;
 	margin-left: 30px;
 }
+.menu li:before{
+	content: '.';
+	font-size: 50px;
+	line-height: 20px;
+	color: white;
+}
 
 .logotipo{
 	display: inline-block;
-}
-
-.contenedor{
-	width: 800px;
-	margin: auto;
+	margin-left: 0;
 }
 .guitarra{
-	margin: 10px;
+	margin: 10px 10px 40px 10px;
 	padding: 10px;
 	/*overflow: hidden;*/
 	border: 1px solid #1f313c;
@@ -80,6 +136,9 @@ body{
 
 .guitarra ol{
 	padding: 0;
+}
+.guitarra.b{
+	height: 190px;
 }
 
 .derecha{
@@ -90,7 +149,6 @@ body{
 .izquierda{
 	float: left;
 	position: relative;
-	top: 80px;
 }
 
 .contenedor-guitarra-a{
@@ -98,6 +156,8 @@ body{
 }
 .contenedor-guitarra-b{
 	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
 }
 
 .header{
@@ -105,6 +165,7 @@ body{
 }
 .footer{
 	background: #273b47;
+	padding: 50px 10px;
 
 }
 .contacto{
@@ -135,7 +196,6 @@ body{
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px 10px;
 }
 .col1, .col2{
 	display: flex;
@@ -147,6 +207,9 @@ body{
 
 .col2{
 	align-items: flex-start;
+}
+.col2 .button{
+	margin-top: 5px;
 }
 
  .intereses label{
